@@ -1,0 +1,11 @@
+3
+Orange,Apple,Banana
+Pear,Pineapple,Banana
+Orange,Apple,Avocado
+Cherry,Pineapple,Apple,Avocado,Lemon
+Pear,Cherry,Avocado
+Pear,Cherry,Orange,Lemon,Banana
+Orange,Apple,Avocado
+Pineapple,Apple,Avocado
+Pear,Cherry,Orange
+Pear,Orange,Lemon
