@@ -22,11 +22,11 @@ Pineapple,Apple,Avocado
 Pear,Cherry,Orange
 Pear,Orange,Lemon
 
-Example Output\n
-Apple,Avocado\n
-Apple,Orange\n
-Cherry,Pear\n
-Orange,Pear\n
+Example Output<br>
+Apple,Avocado<br>
+Apple,Orange<br>
+Cherry,Pear<br>
+Orange,Pear<br>
 
 Example Explanation
 Since the first line of the input reads, 3, the output must only show those strings which appear together in a at least 3 lines of the file. There are exactly 4 pairs of strings that appear together at least 3 times in the brand view log input.
