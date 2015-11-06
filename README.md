@@ -9,18 +9,18 @@ The first line contains an integer, the minimum number of co-occurrences/thresho
 Output 
 Pairs of strings, separated by a comma, that appeared together on at least the threshold number of lines in the input. A pair will appear exactly once, and the pair of strings will be listed in alphabetical order. 
 
-Example Input
-3
-Orange,Apple,Banana
-Pear,Pineapple,Banana
-Orange,Apple,Avocado
-Cherry,Pineapple,Apple,Avocado,Lemon
-Pear,Cherry,Avocado
-Pear,Cherry,Orange,Lemon,Banana
-Orange,Apple,Avocado
-Pineapple,Apple,Avocado
-Pear,Cherry,Orange
-Pear,Orange,Lemon
+Example Input<br>
+3<br>
+Orange,Apple,Banana<br>
+Pear,Pineapple,Banana<br>
+Orange,Apple,Avocado<br>
+Cherry,Pineapple,Apple,Avocado,Lemon<br>
+Pear,Cherry,Avocado<br>
+Pear,Cherry,Orange,Lemon,Banana<br>
+Orange,Apple,Avocado<br>
+Pineapple,Apple,Avocado<br>
+Pear,Cherry,Orange<br>
+Pear,Orange,Lemon<br>
 
 Example Output<br>
 Apple,Avocado<br>
