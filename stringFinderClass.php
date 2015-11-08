@@ -11,7 +11,7 @@ Class stringFinder
     {   
         if (is_resource($input)) {
             $this->input = $input;
-        } else{
+        } else {
             throw new Exception("Invalid input.\n");       
         }
     }
@@ -20,12 +20,12 @@ Class stringFinder
  */
     function setThreshold()
     {   
-        if ($line = fgetcsv( $this->input )){
+        if ($line = fgetcsv( $this->input)) {
             //Make sure the threshold is an integer and not 0.
             if (is_numeric($line[0]) && $line[0] != 0 && !strpos($line[0],'.')) {
                 $this->threshold = $line[0];
             }
-            else{
+            else {
                 throw new Exception("Threshold must be an integer & greater then 0.\n");
             }
         } else {
@@ -62,7 +62,7 @@ Class stringFinder
                 unset($this->uniqueStrings[$k]);
             }
         }
-        if(empty($this->uniqueStrings)) {
+        if (empty($this->uniqueStrings)) {
             throw new Exception("There are no possible co-occurances since none of the strings in the file qualfiy based on the threshold.\n");      
         }
     }
@@ -99,10 +99,10 @@ Class stringFinder
             //Explode strings using a comma, and find how many times each appears on the same line.
             $pair_array = explode(',', $pair);
             //read file line by line starting at line 2 and compare the strings in the $pair array with what is in the file. 
-            while( $line = fgetcsv( $this->input ) ) {
+            while ($line = fgetcsv( $this->input)) {
                 if (in_array($pair_array[0], $line) && in_array($pair_array[1], $line)) {
                     $occurence_count++;
-                    if($occurence_count >= $this->threshold){
+                    if ($occurence_count >= $this->threshold) {
                         $this->output .= $pair_array[0] . "," . $pair_array[1] . "\n";
                         //Threshold has been meet for this pair. Add to output and break the inner loop to continue onto the next pair.
                         break;
