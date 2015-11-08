@@ -33,4 +33,4 @@ Since the first line of the input reads, 3, the output must only show those stri
 
 To run from terminal:
 
-php matcher_controller.php < input_file.txt
+php stringFinder_controller.php < input_file.txt
